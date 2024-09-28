@@ -6,16 +6,40 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   plugins: [react(),
     VitePWA({
-      manifest:{
+      registerType: "autoUpdate",
+      manifest: {
+        name: "Safe Shetra",
+        short_name: "Safe-Shetra",
+        description: "MSafe-Shetra",
+        theme_color: "#ca7b3a",
         icons:[
           {
-            src:"/public/Logo.png",
-            sizes:"512x512",
-            type:'image/png',
-            purpose:'any maskable'
+            "src": "/pwa-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+          },
+          {
+            "src": "/pwa-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+          },
+          {
+            "src": "/pwa-maskable-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+          },
+          {
+            "src": "/pwa-maskable-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
           }
         ]
       }
     })
   ],
 })
+   
