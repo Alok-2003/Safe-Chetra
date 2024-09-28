@@ -7,13 +7,13 @@ const Home = () => {
         <div className='flex h-screen justify-center items-centre bg-red-100' >
             <div>
                 <h1 className='text-4xl font-semibold uppercase mb-20' >Safe Shetra</h1>
-                <Link className='block text-xl text-center ' to={'/W'} >
+                <Link className='block text-xl text-center mb-4' to={'/W'} >
                     Weather page
                 </Link>
-                <Link className='block text-xl text-center ' to={'/login'} >
+                <Link className='block text-xl text-center mb-4' to={'/login'} >
                     Login
                 </Link>
-                <Link className='block text-xl text-center ' to={'/dashboard'} >
+                <Link className='block text-xl text-center mb-4' to={'/dashboard'} >
                     Dashboard
                 </Link>
             </div>

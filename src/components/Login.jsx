@@ -5,8 +5,8 @@ export default function Login() {
   const [showPassword, setShowPassword] = useState(false)
 
   return (
-    <div className="flex h-screen items-center justify-center bg-orange-100">
-      <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md">
+    <div className="flex h-screen items-center justify-center px-8 bg-orange-100">
+      <div className="bg-white p-8 rounded-xl shadow-md w-full max-w-md md:max-w-sm ">
         <h1 className="text-4xl font-bold mb-6 text-center">Login</h1>
         <h2 className="text-xl text-orange-400 mb-6 text-center">Login to your account</h2>
         <form className="space-y-4">
